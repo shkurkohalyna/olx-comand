@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+    <title>OLX</title>
+</head>
+
+<body>
+    <header>
+        <script type='text/javascript'>
+//  function preview_image(event) {
+//     var reader = new FileReader();
+//     reader.onload = function () {
+//       var output = document.getElementById('add-image');
+//       output.src = reader.result;
+//     }
+//     reader.readAsDataURL(event.target.files[0]);
+//   }
+        </script>
+
+        <section class="header-navigation">
+            <div class="container">
+                <div class="header-navigation__box">
+
+                    <button type="button" aria-expanded="false" aria-controls="menu-container" data-menu-button
+                        class="header-navigation__menu-btn is-open">
+                        <svg aria-label="Переключатель мобильного меню" class="header-navigation__menu-icon">
+                            <use class="header-navigation__icon-close" href="./images/sprite-min.svg#icon-menu"
+                                widrh="20" height="20">
+                            </use>
+                        </svg>
+                    </button>
+
+                    <a href="./index.html" class="header-navigation_logo">
+                        <svg class="header-navigation__icon-logo" width="50" height="20">
+                            <use href="./images/sprite-min.svg#icon-logo">
+                            </use>
+                        </svg>
+                    </a>
+
+                    <button type="button" class="header-navigation__menu-serch js-btn-open-modal-serch">
+                        <svg aria-label="Меню поиска" class="header-navigation__icon-serch">
+                            <use class="header-navigation__menu-serch__icon-menu"
+                                href="./images/sprite-min.svg#icon-serch"></use>
+                        </svg>
+                    </button>
+
+                    <button type="button" class="create-an-ad" data-create-an-ad-btn-open>
+                        <span>
+                            створити оголошення
+                        </span>
+                    </button>
+                    <div class="header-navigation__menu-acount is-login">
+                        <button class="header-navigation__menu-acount-btn ">
+                            <svg aria-label="Меню личного кабинета" class="header-navigation__acount-icon" width="20"
+                                height="20">
+                                <use class="header-navigation__acount-icon-logo"
+                                    href="./images/sprite-min.svg#icon-user-profile"></use>
+                            </svg>
+                            <span class="header-navigation__menu-acount-text">Мій кабінет</span>
+                        </button>
+                        <div class="header-navigation__dropdawn-content">
+                            <a href="#" class="header-navigation__dropdawn-content--text">Мої оголошення</a>
+                            <a href="#" class="header-navigation__dropdawn-content--text">Обране</a>
+                        </div>
+                    </div>
+
+                    <div class="sidenav-desctop" id="sidenav-desctop">
+
+                    </div>
+                    <!--Annet втулилась-->
+                    <!-- <div class="category-filter container">
+  <div class="category-filter__section">
+    <ul class="category-filter__list">
+      <li class="category-filter__item">
+        <input type="checkbox" name="category" value="property" id="property"/>
+        <label for="property">Нерухомість</label>
+      </li>
+      <li class="category-filter__item">
+        <input type="checkbox" name="category" value="transport" id="transport"/>
+        <label for="transport">Транспорт</label>
+      </li>
+      <li class="category-filter__item">
+        <input type="checkbox" name="category" value="work" id="work"/>
+        <label for="work">Робота</label>
+      </li>
+      <li class="category-filter__item">
+        <input type="checkbox" name="category" value="electronics" id="electronics"/>
+        <label for="electronics">Електроніка</label>
+      </li>
+      <li class="category-filter__item">
+        <input type="checkbox" name="category" value="business-and-services" id="business-and-services"/>
+        <label for="business-and-services">Бізнес та послуги</label>
+      </li>
+      <li class="category-filter__item">
+        <input type="checkbox" name="category" value="recreation-and-sport" id="recreation-and-sport"/>
+        <label for="recreation-and-sport">Відпочинок і спорт</label>
+      </li>
+      <li class="category-filter__item">
+        <input type="checkbox" name="category" value="free" id="free"/>
+        <label for="free">Віддам безкоштовно</label>
+      </li>
+      <li class="category-filter__item">
+        <input type="checkbox" name="category" value="trade" id="trade"/>
+        <label for="trade">Обмін</label>
+      </li>
+    </ul>
+  </div>
+</div> -->
+                    <!--Annet втулилась-->
+
+                    <button class="header-navigation__clear-filter">
+                        <svg aria-label="Сброс фильтра" class="header-navigation__clear-filter-icon" width="16"
+                            height="20">
+                            <use class="header-navigation__clear-filter-icon-logo"
+                                href="./images/sprite-min.svg#icon-clear-filter">
+                            </use>
+                        </svg>
+                        <span class="header-navigation__clear-filter-text">Очистити фільтри</span>
+                    </button>
+
+                    <button data-popup-open class="header-navigation__menu-acount-logout is-login">
+                        <svg aria-label="Выход из личного кабинета" class="header-navigation__acount-logout-icon"
+                            width="20" height="20">
+                            <use href="./images/sprite-min.svg#icon-logout"></use>
+                        </svg>
+                    </button>
+                    <button class="header-navigation__registry is-login " data-modal-open-registration>
+                        <span class="header-navigation__registry-text">Реєстрація / Увійти</span>
+                    </button>
+                    <div class="flex-break"></div>
+                </div>
+            </div>
+        </section>
+
+        <div id="sidenav" class="sidenav" data-menu>
+            <div class="sidenav__link">
+                <button type="button" class="sidenav__menu-icon" data-clouse-button>
+                    <svg aria-label="Переключатель мобильного меню" class="sidenav__icon-clouse">
+                        <use class="sidenav__icon-close" href="./images/sprite-min.svg#icon-menu-clouse" widrh="24"
+                            height="24">
+                        </use>
+                    </svg>
+                </button>
+                <div class="sidenav__box-login">
+                    <svg aria-label="Меню личного кабинета" class="sidenav__acount-icon" width="20" height="20">
+                        <use class="sidenav__acount-icon-logo" href="./images/sprite-min.svg#icon-user-profile"></use>
+                    </svg>
+                    <button class="sidenav__registry is-login" data-sidenav-open-registration>
+                        <span class="sidenav__registry-text">Реєстрація / Увійти</span>
+                    </button>
+                    <div class="sidenav__menu-acount is-login">
+                        <button class="sidenav__menu-acount-btn ">
+                            <span class="sidenav__menu-acount-text">Мій кабінет</span>
+                        </button>
+                        <div class="sidenav__dropdawn-content">
+                            <a href="#" class="sidenav__dropdawn-content--text">Мої оголошення</a>
+                            <a href="#" class="sidenav__dropdawn-content--text">Обране</a>
+                        </div>
+                    </div>
+                    <button class="sidenav__menu-acount-logout is-login">
+                        <svg aria-label="Выход из личного кабинета" class="sidenav__acount-logout-icon" width="20"
+                            height="20">
+                            <use href="./images/sprite-min.svg#icon-logout"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="create-an-ad-modal" class="create-an-ad-modal" data-create-ad>
+            <div class="create-an-ad-modal__box container ">
+                <button type="button" class="create-an-ad-modal__menu-clouse" data-clouse-button-create-ad>
+                    <svg aria-label="закрыть окно" class="create-an-ad-modal__icon-clouse">
+                        <use href="./images/sprite-min.svg#icon-menu-clouse" widrh="14" height="14">
+                        </use>
+                    </svg>
+                </button>
+                <h2 class="create-an-ad-modal__title">Додати оголошеня</h2>
+                <form action="" method="POST">
+                    <ul>
+                        <li class="create-an-ad-modal-li">
+                            <span class="create-an-ad-modal__title-text">Назва товару</span>
+                            <input type="text" name="product-name-add" id="product-name-add"
+                                class="create-an-ad-modal__input-area">
+                        </li>
+                        <li class="create-an-ad-modal__file-loader create-an-ad-modal-li">
+                            <span class="create-an-ad-modal__title-text">фото</span>
+                            <div class="create-an-ad-modal__file-box js-inputClick">
+                                <div class="create-an-ad-modal-btn-file">
+                                    <input type="file" name="file" id="file" class="create-an-ad-modal__input-file">
+                                    <label for="file" class="create-an-ad-modal__tertiary js-labelFile">
+                                        <span class="js-fileName">+</span>
+                                        <img id="add-image" class="create-an-ad-modal__add-image" />
+                                    </label>
+                                </div>
+                                <div class="create-an-ad-modal-btn-file">
+                                    <input type="file" name="file" id="file-2" class="create-an-ad-modal__input-file">
+                                    <label for="file-2" class="create-an-ad-modal__tertiary js-labelFile">
+                                        <span class="js-fileName">+</span>
+                                        <img id="add-image2" class="create-an-ad-modal__add-image" />
+                                    </label>
+                                </div>
+                                <div class="create-an-ad-modal-btn-file">
+                                    <input type="file" name="file" id="file-3" class="create-an-ad-modal__input-file">
+                                    <label for="file-3" class="create-an-ad-modal__tertiary js-labelFile">
+                                        <span class="js-fileName">+</span>
+                                        <img id="add-image3" class="create-an-ad-modal__add-image" />
+                                    </label>
+                                </div>
+                                <div class="create-an-ad-modal-btn-file">
+                                    <input type="file" name="file" id="file-4" class="create-an-ad-modal__input-file">
+                                    <label for="file-4" class="create-an-ad-modal__tertiary js-labelFile">
+                                        <span class="js-fileName">+</span>
+                                        <img id="add-image4" class="create-an-ad-modal__add-image" />
+                                    </label>
+                                </div>
+                                <div class="create-an-ad-modal-btn-file">
+                                    <input type="file" name="file" id="file-5" class="create-an-ad-modal__input-file">
+                                    <label for="file-5" class="create-an-ad-modal__tertiary js-labelFile">
+                                        <span class="js-fileName">+</span>
+                                        <img id="add-image5" class="create-an-ad-modal__add-image" />
+                                    </label>
+                                </div>
+                                <div class="create-an-ad-modal-btn-file">
+                                    <input type="file" name="file" id="file-6" class="create-an-ad-modal__input-file">
+                                    <label for="file-6" class="create-an-ad-modal__tertiary js-labelFile">
+                                        <span class="js-fileName">+</span>
+                                        <img id="add-image6" class="create-an-ad-modal__add-image" />
+                                    </label>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="create-an-ad-modal-li">
+                            <span class="create-an-ad-modal__title-text">Опис товару</span>
+                            <input type="text" name="product-desc-add" id="product-desc-add"
+                                class="create-an-ad-modal__input-area">
+                        </li>
+                        <li class="create-an-ad-modal-li">
+                            <label for="categori-product-add"></label>
+                            <span class="create-an-ad-modal__title-text">Категорія Товару</span>
+                            <input type="text" name="categori-product-add" id="categori-product-add"
+                                class="create-an-ad-modal__input-area" list="categori-product-add-list"
+                                placeholder="Вибіріть категорію">
+                            <datalist id="categori-product-add-list">
+                            </datalist>
+                        </li>
+                        <li class="create-an-ad-modal-li">
+                            <span class="create-an-ad-modal__title-text">Ціна</span>
+                            <input type="text" name="price-product-add" id="price-product-add"
+                                class="create-an-ad-modal__input-area" placeholder="0.00 грн">
+                        </li>
+                        <li class="create-an-ad-modal-li">
+                            <span class="create-an-ad-modal__title-text">Телефон</span>
+                            <input type="text" name="sellers-telephone-add" id="sellers-telephone-add"
+                                class="create-an-ad-modal__input-area" placeholder="+38 (0--) --- -- --">
+                        </li>
+                    </ul>
+                    <button type="submit" class="create-an-ad-modal__submit-btn">
+                        <span class="create-an-ad-modal__submit-text">Додати</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+        <!-- Модалка регистрации -->
+        <!-- <div class="modal-registration" data-menu-registration>
+  <div class="modal-registration__box ">
+    <div class="container">
+<button type="button" class="modal-registration__menu-clouse"  data-clouse-button-modal-registration>
+  <svg aria-label="закрыть окно" class="modal-registration__icon-clouse">
+    <use href="./images/sprite-min.svg#icon-menu-clouse" widrh="14" height="14" data-clouse-button>
+    </use>
+  </svg>
+  </button>
+  <div class="modal-registration__box-main-area">
+  <span class="modal-registration__text">
+    Ви можете авторизуватися за допомогою Googlt Account:
+  </span>
+<button type="button" class="modal-registration__btn-google" data-google-modal-registration>
+  <svg aria-label="Зарегестрирыватся через Google" class="modal-registration__google-icon" widrh="18" height="18">
+    <use href="./images/sprite-min.svg#icon-google-symbol" >
+    </use>
+  </svg>
+  Google
+</button>
+<span class="modal-registration__text">Або зайти за допомогою імейлу і пароля, попередньо зареєструвавшись:</span>
+<form action="" class="modal-registration__form">
+<input type="email" placeholder="E-mail" class="modal-registration__input">
+<input type="password" placeholder="Password" class="modal-registration__input">
+<button type="submit" id="onLogin" class="modal-registration__btn modal-registration__btn--onLogin"> Увійти</button>
+<button type="submit" id="onRegistration" class="modal-registration__btn modal-registration__btn--onRegistration"> Зареєструватись</button>
+</form>
+  </div>
+</div>
+</div>
+</div> -->
+
+    </header>
+    <!-- конфликт, закоментировал, у нас уже есть такая кнопка, но ету оставлю пока чтоб автор сам с ней разобрался -->
+    <!-- <button type="button" class="user__button create-ad-js" data-modal-open>Створити оголошення!</button>
+  <div class=""></div> -->
+    <div class="auth-backdrop is-hidden" data-auth-modal>
+        <div class="overlay"></div>
+        <div class="auth-popup">
+            <button type="button" class="button-close" data-auth-modal-close>
+                <svg class="icon">
+                    <use href="./images/sprite-min.svg#icon-menu-clouse" width="14" height="14">
+                    </use>
+                </svg>
+            </button>
+            <p class="auth-popup-text">Ви можете авторизуватися за допомогою Googlt Account:</p>
+            <button type="button" class="button-google">
+                <svg class="icon">
+                    <use href="./images/sprite-min.svg#icon-google-symbol" width="18" height="18">
+                    </use>
+                </svg>
+                Google </button>
+            <p class="auth-popup-text">Або зайти за допомогою імейлу і пароля, попередньо зареєструвавшись:</p>
+            <form class="auth-form" autocomplete="off" novalidate>
+                <input class="auth-form-input" type="email" id="Email" placeholder="Email">
+                <span class="email-error"></span>
+                <input class="auth-form-input" type="password" id="Password" placeholder="Password">
+                <span class="password-error"></span>
+                <div class="auth-button-container">
+                    <button type="submit" class="auth-button signin">Увійти</button>
+                    <button type="submit" class="auth-button signup">Зареєструватись</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="modal-search js-modal-search">
+        <div class="modal-search__overlay"></div>
+        <div class="modal-search__container">
+            <input type="search" name="" id="" class="search-field" placeholder="Пошук">
+            <button type="button" class="close__button js-btn-clouse-modal-serch" data-action="close-modal">
+                <svg aria-label="кнопка закрытия" class="icon-clouse icon-size icon-white">
+                    <use class="modal-search__icon-close" href="./images/sprite-min.svg#icon-menu-clouse" width="14"
+                        height="14">
+                    </use>
+                </svg>
+            </button>
+            <button type="button" class="search__button">
+                <svg aria-label="Кнопка поиска" class="icon-search icon-size icon-white" width="17" height="17">
+                    <use class="icon-serch" href="./images/sprite-min.svg#icon-serch"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <!--Annet влезла-->
+    <!--Slider-->
+    <!-- <div class="splide" id="card-slider">
+      <div class="splide__arrows">
+        <button class="splide__arrow splide__arrow--prev">
+          <svg class="pre-btn">
+            <use href="./images/sprite.svg#icon-prev-btn"></use>
+          </svg>
+        </button>
+        <button class="splide__arrow splide__arrow--next">
+          <svg class="next-btn">
+            <use href="./images/sprite.svg#icon-next-btn"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <h4>Heading 01</h4>
+            <div>
+              Description 01
+            </div></li>
+          <li class="splide__slide">
+            <h4>Heading 01</h4>
+            <div>
+              Description 01
+            </div></li>
+          <li class="splide__slide">
+            <h4>Heading 01</h4>
+            <div>
+              Description 01
+            </div></li>
+        </ul>
+      </div>
+    </div> -->
+
+
+    <div class="container">
+        <section class="categories"></section>
+        <div class="pagination" data-pagination>
+            <a class="pagination__link active" href="#one">1</a>
+            <a class="pagination__link" href="#two">2</a>
+            <a class="pagination__link" href="#three">3</a>
+        </div>
+    </div>
+    </div>
+    <!--Annet влезла-->
+    <footer class="footer">
+        <div class="footer-section container">
+            <svg class="icon-copyright">
+                <use href="./images/sprite.svg#icon-copyright"></use>
+            </svg>
+            <div class="footer-item__year">2019</div>
+            <div class="footer-item__slash-first">|</div>
+            <div class="footer-item__rights">All Rights Reserved</div>
+            <div class="footer-item__slash-second">|</div>
+            <div class="footer-item__developers">Developed with
+                <svg class="icon-orange-heart">
+                    <use href="./images/sprite.svg#icon-orange-heart"></use>
+                </svg>
+            </div>
+            <div>by <span class="footer-item__underline">GoIT Students</span></div>
+        </div>
+    </footer>
+    <!-- Выход -->
+    <div class="backdrop-logout is-hidden " data-popup>
+        <div class="popup-logout">
+            <button data-popup-close class="btn-popup-close" aria-label="Закриває модальне вікно">
+                <svg class="icon-popup-close">
+                    <use href="./images/sprite-min.svg#icon-menu-clouse"></use>
+                </svg>
+            </button>
+            <h2 class="popup-text">Ви дійсно хочете вийти з акаунта?</h2>
+            <div class="container-popup-btn">
+                <button data-exit class="btn-popup btn-primary " type="submit"
+                    aria-label="Входить в акаунт">Вийти</button>
+                <button data-popup-cancel class="btn-popup btn-secondary" type="button"
+                    aria-label="Вілміняє вхід в акаунт">Відміна</button>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="container"><div class="cards"></div></div> -->
+</body>
+
+</html>
+<!-- для включение меню авторизованого пользывателя включить клас " is-login" на:
+<button class="sidenav__registry is-login">
+<div class="sidenav__menu-acount .is-login">
+<div class="sidenav__menu-acount .is-login"></div>
+<button class="header-navigation__registry is-login " data-modal-open-registration></button>
+<button class="header-navigation__menu-acount-logout is-login"></button>
+<div class="header-navigation__menu-acount is-login"></div> -->
